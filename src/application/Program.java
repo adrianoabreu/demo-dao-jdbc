@@ -37,7 +37,7 @@ public class Program {
 		System.out.println("Inserted! New id = " + newSeller.getId());
 		*/
 		System.out.println("\n=== TEST 5: seller update ===");
-		seller = sellerDao.findById(8);
+		seller = sellerDao.findById(1);
 		seller.setName("André Luis Machado Abreu");
 		sellerDao.update(seller);
 		System.out.println("Update completed!");
@@ -48,6 +48,8 @@ public class Program {
 		int id = sc.nextInt();
 		sellerDao.deleteById(id);
 		System.out.println("Delete completed");
+		
+		sc.close();
 	}
 
 }
